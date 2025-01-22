@@ -122,6 +122,7 @@
             lstEmpleadosHospital.Name = "lstEmpleadosHospital";
             lstEmpleadosHospital.Size = new Size(400, 324);
             lstEmpleadosHospital.TabIndex = 9;
+            lstEmpleadosHospital.SelectedIndexChanged += lstEmpleadosHospital_SelectedIndexChanged;
             // 
             // FormEmpleadosHospitales
             // 

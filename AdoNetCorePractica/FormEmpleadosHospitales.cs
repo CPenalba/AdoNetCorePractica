@@ -85,5 +85,10 @@ namespace AdoNetCorePractica
             }
 
         }
+
+        private void lstEmpleadosHospital_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
