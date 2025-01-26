@@ -40,7 +40,7 @@
             label6 = new Label();
             label7 = new Label();
             label8 = new Label();
-            txtIdUp = new TextBox();
+            txtApellido = new TextBox();
             txtOficio = new TextBox();
             txtSalario = new TextBox();
             btnUpdate = new Button();
@@ -106,6 +106,7 @@
             btnInsertarDepartamento.TabIndex = 8;
             btnInsertarDepartamento.Text = "Insertar Departamento";
             btnInsertarDepartamento.UseVisualStyleBackColor = true;
+            btnInsertarDepartamento.Click += btnInsertarDepartamento_Click;
             // 
             // label5
             // 
@@ -123,15 +124,16 @@
             lstEmpleados.Name = "lstEmpleados";
             lstEmpleados.Size = new Size(341, 364);
             lstEmpleados.TabIndex = 10;
+            lstEmpleados.SelectedIndexChanged += lstEmpleados_SelectedIndexChanged;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Location = new Point(778, 31);
             label6.Name = "label6";
-            label6.Size = new Size(22, 20);
+            label6.Size = new Size(66, 20);
             label6.TabIndex = 11;
-            label6.Text = "Id";
+            label6.Text = "Apellido";
             // 
             // label7
             // 
@@ -151,12 +153,12 @@
             label8.TabIndex = 13;
             label8.Text = "Salario";
             // 
-            // txtIdUp
+            // txtApellido
             // 
-            txtIdUp.Location = new Point(778, 54);
-            txtIdUp.Name = "txtIdUp";
-            txtIdUp.Size = new Size(213, 27);
-            txtIdUp.TabIndex = 14;
+            txtApellido.Location = new Point(778, 54);
+            txtApellido.Name = "txtApellido";
+            txtApellido.Size = new Size(213, 27);
+            txtApellido.TabIndex = 14;
             // 
             // txtOficio
             // 
@@ -206,7 +208,7 @@
             Controls.Add(btnUpdate);
             Controls.Add(txtSalario);
             Controls.Add(txtOficio);
-            Controls.Add(txtIdUp);
+            Controls.Add(txtApellido);
             Controls.Add(label8);
             Controls.Add(label7);
             Controls.Add(label6);
@@ -241,7 +243,7 @@
         private Label label6;
         private Label label7;
         private Label label8;
-        private TextBox txtIdUp;
+        private TextBox txtApellido;
         private TextBox txtOficio;
         private TextBox txtSalario;
         private Button btnUpdate;
